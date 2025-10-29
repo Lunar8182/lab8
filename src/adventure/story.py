@@ -33,14 +33,15 @@ def main():
     print("[italic bright_black]You can go [green]left[/green] or [blue]right[/blue].[/italic bright_black]")
 
     while True:
-        choice = input("Which direction do you choose? ([green]left[/green]/[blue]right[/blue]/[red]exit[/red]): ").strip().lower()
-
+        print("Which direction do you choose? ([green]left[/green]/[blue]right[/blue]/[red]exit[/red]): ", end="")
+        choice = input().strip().lower()
         if choice == "exit":
             print("[red]You decide to leave the forest before the darkness reaches you. Farewell, wanderer.[/red]")
+            print("Goodbye Wanderer. The forest awaits your return in the near future.")
             break
 
         print(step(choice, events))
-        print("Goodbye Wanderer.")
+        
 
 
 if __name__ == "__main__":

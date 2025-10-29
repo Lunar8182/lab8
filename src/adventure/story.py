@@ -36,11 +36,11 @@ def main():
         choice = input("Which direction do you choose? ([green]left[/green]/[blue]right[/blue]/[red]exit[/red]): ").strip().lower()
 
         if choice == "exit":
-            print("[red]You decide to leave the forest. Farewell, wanderer.[/red]")
-            print("Goodbye")
+            print("[red]You decide to leave the forest before the darkness reaches you. Farewell, wanderer.[/red]")
             break
 
         print(step(choice, events))
+        print("Goodbye Wanderer.")
 
 
 if __name__ == "__main__":

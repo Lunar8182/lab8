@@ -37,6 +37,7 @@ def main():
 
         if choice == "exit":
             print("[red]You decide to leave the forest. Farewell, wanderer.[/red]")
+            print("Goodbye")
             break
 
         print(step(choice, events))
